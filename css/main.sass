@@ -5,7 +5,7 @@ $dark-gray:       #4A4A4A
 $mid-gray:        #9B9B9B
 $gray:            #5C5C5C
 $red:             #E02E47
-$dark-red:        #BC2841
+$dark-red:        #561315
 $font-light:      "proxima-nova-light", sans-serif
 $font-semibold:   "proxima-nova-semibold", sans-serif
 $font-extrabold:  "proxima-nova-extrabold", sans-serif
@@ -17,10 +17,29 @@ body
 
 a
   color: $red
+  -webkit-transition: all 200ms ease-in-out
+  -moz-transition: all 200ms ease-in-out
+  -o-transition: all 200ms ease-in-out
+  transition: all 200ms ease-in-out
+
+  &:hover
+    color: $dark-red
+    text-decoration: none
 
 header
   background: $red
   height: 44px
+
+  .social-links
+    text-align: right
+    padding-top: 10px
+
+    li
+      display: inline-block
+
+      a
+        padding: 10px
+
 
 h2
   font-family: $font-extrabold
@@ -165,7 +184,7 @@ main
     text-align: center
     color: $light-gray
     font-family: $font-light
-    margin: 50px 0
+    margin: 50px auto
     padding: 0 30px
 
     .lead
@@ -200,6 +219,13 @@ footer
     text-transform: uppercase
     font-size: 10px
     text-align: center
+
+hr
+  border : 0
+  height : 15px
+  background : url(../images/line.svg) 50% 0 no-repeat
+  margin : 0
+  margin-top: -10px
 
 form
   margin-top: 20px
@@ -239,8 +265,57 @@ input[type="color"]:focus,
 
 // Medium devices (tablets, 48em and up)
 @media (min-width: 48em)
+
+  h2
+    font-size: 26px
+    letter-spacing: 3px
+    margin-bottom: 8px
+
+  .description
+    font-size: 20px
+
+  .container
+    max-width: 768px
+
   iframe
     height: 300px
+    margin-bottom: 20px
+
+  main
+    .tagline
+      float: right
+
+      .lead
+        font-size: 34px
+        line-height: 40px
+        margin-top: 50px
+
+    .team
+      img
+        width: 400px
+
+    .intro
+      .lead
+        font-size: 20px
+        line-height: 30px
+        font-family: $font-light
+
+  .contact-details
+    float: right
+    padding-top: 40px
+
+    li
+      margin-bottom: 25px
+
+    .social-links
+      ul
+        text-align: left
+
+
+  .contact-form
+    form
+      width: 80%
+      margin: 0 auto
 
 // Large devices (desktops, 62em and up)
 @media (min-width: 62em)
