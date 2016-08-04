@@ -1,0 +1,250 @@
+@import "../fonts/proximanova/stylesheet.css"
+
+$light-gray:      #F1F1F1
+$dark-gray:       #4A4A4A
+$mid-gray:        #9B9B9B
+$gray:            #5C5C5C
+$red:             #E02E47
+$dark-red:        #BC2841
+$font-light:      "proxima-nova-light", sans-serif
+$font-semibold:   "proxima-nova-semibold", sans-serif
+$font-extrabold:  "proxima-nova-extrabold", sans-serif
+$interlineado:    1.4em
+
+body
+  font: normal 16px/1.6em $font-light
+  background: $light-gray
+
+a
+  color: $red
+
+header
+  background: $red
+  height: 44px
+
+h2
+  font-family: $font-extrabold
+  text-align: center
+  font-size: 16px
+  color: $red
+  text-transform: uppercase
+  letter-spacing: 1px
+  margin-bottom: 0
+
+.team-member
+  text-align: center
+
+  p
+    font-size: 10px
+    font-family: $font-light
+    color: $mid-gray
+
+h5
+  font-family: $font-semibold
+  color: $red
+  text-transform: uppercase
+  margin-top: 15px
+  margin-bottom: 0
+  font-size: 16px
+
+.description
+  font-family: $font-light
+  color: $mid-gray
+  font-size: 13px
+  text-align: center
+
+.btn-action
+  font-family: $font-semibold
+  text-transform: uppercase
+  font-size: 16px
+  width: 100%
+  background: none
+  color: $red
+  border: 1px solid $red
+  margin-top: 30px
+  -webkit-transition: all 200ms ease-in-out
+  -moz-transition: all 200ms ease-in-out
+  -o-transition: all 200ms ease-in-out
+  transition: all 200ms ease-in-out
+
+  &:hover
+    background: $red
+    color: white
+
+.divider
+  text-align: center
+  margin: 30px 0
+
+.generic
+  background-color: white
+  border-radius: 5px
+  padding: 25px 0
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+.contacto
+  li
+    font-size: 12px
+    line-height: 20px
+    margin: 10px 0
+    background-repeat: no-repeat
+    padding-left: 30px
+    background-position: left center
+
+    &:nth-child(1)
+      background-image: url(../images/icon-home.svg)
+
+    &:nth-child(2)
+      background-image: url(../images/icon-email.svg)
+
+    &:nth-child(3)
+      background-image: url(../images/icon-phone.svg)
+
+    &:nth-child(4)
+      padding-left: 0
+
+  .social-links
+    ul
+      text-align: center
+      margin-top: 25px
+      margin-left: 0
+      padding-left: 0
+
+    li
+      margin: 0
+      padding: 0
+      background-image: none
+      display: inline-block
+      text-align: center
+      width: 20%
+
+.servicios
+  li
+    background-image: url(../images/icon-home.svg)
+    background-repeat: no-repeat
+    background-position: left center
+    padding-left: 30px
+    padding-top: 5px
+    color: $dark-gray
+    font-family: $font-semibold
+    font-size: 16px
+    margin: 10px 0
+
+.vcenter
+  display: flex
+  align-items: center
+
+header
+  .logo
+    height: 20px
+    margin: 12px 0
+
+main
+  .hero-unit
+    background: white
+    text-align: center
+
+  .lead
+    color: $dark-gray
+    font-size: 24px
+    line-height: 36px
+
+  .tagline
+    padding-top: 20px
+
+  .team
+    padding-top: 30px
+
+    img
+      width: 300px
+
+  .intro
+    text-align: center
+    color: $light-gray
+    font-family: $font-light
+    margin: 50px 0
+    padding: 0 30px
+
+    .lead
+      font-size: 14px
+      line-height: $interlineado
+
+      strong
+        color: $red
+
+.btn-primary
+  text-transform: uppercase
+  background: $red
+  border: none
+  font-size: 16px
+  font-family: $font-semibold
+  padding: 12px 20px
+  -webkit-transition: all 200ms ease-in-out
+  -moz-transition: all 200ms ease-in-out
+  -o-transition: all 200ms ease-in-out
+  transition: all 200ms ease-in-out
+
+  &:hover
+    background: $dark-red
+
+strong
+  font-family: $font-semibold
+
+footer
+  p
+    color: $mid-gray
+    margin: 25px 0
+    text-transform: uppercase
+    font-size: 10px
+    text-align: center
+
+form
+  margin-top: 20px
+
+  input,
+  textarea
+    border: 1px solid $red
+    width: 100%
+    font-size: 13px
+    padding: 8px 18px
+    border-radius: 5px
+    margin: 5px 0
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus
+  border-color: rgba(224, 46, 71, 0.8)
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(224, 46, 71, 0.6)
+  outline: 0 none
+
+
+// Small devices (landscape phones, 34em and up)
+@media (min-width: 34em)
+
+// Medium devices (tablets, 48em and up)
+@media (min-width: 48em)
+  iframe
+    height: 300px
+
+// Large devices (desktops, 62em and up)
+@media (min-width: 62em)
+
+// Extra large devices (large desktops, 75em and up)
+@media (min-width: 75em)
+

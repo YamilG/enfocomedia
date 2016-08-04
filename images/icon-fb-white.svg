@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-Portrait-Copy" transform="translate(-567.000000, -13.000000)" fill="#FFFFFF">
+            <path d="M588.6,13 L569.4,13 C568.08,13 567,14.08 567,15.4 L567,34.6 C567,35.92 568.08,37 569.4,37 L588.6,37 C589.92,37 591,35.92 591,34.6 L591,15.4 C591,14.08 589.92,13 588.6,13 L588.6,13 Z M587.4,15.4 L587.4,19 L585,19 C584.28,19 583.8,19.48 583.8,20.2 L583.8,22.6 L587.4,22.6 L587.4,26.2 L583.8,26.2 L583.8,34.6 L580.2,34.6 L580.2,26.2 L577.8,26.2 L577.8,22.6 L580.2,22.6 L580.2,19.6 C580.2,17.32 582.12,15.4 584.4,15.4 L587.4,15.4 L587.4,15.4 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

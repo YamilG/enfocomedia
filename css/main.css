@@ -1,0 +1,205 @@
+@import url(../fonts/proximanova/stylesheet.css);
+body {
+  font: normal 16px/1.6em "proxima-nova-light", sans-serif;
+  background: #F1F1F1; }
+
+a {
+  color: #E02E47; }
+
+header {
+  background: #E02E47;
+  height: 44px; }
+
+h2 {
+  font-family: "proxima-nova-extrabold", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: #E02E47;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0; }
+
+.team-member {
+  text-align: center; }
+  .team-member p {
+    font-size: 10px;
+    font-family: "proxima-nova-light", sans-serif;
+    color: #9B9B9B; }
+
+h5 {
+  font-family: "proxima-nova-semibold", sans-serif;
+  color: #E02E47;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 16px; }
+
+.description {
+  font-family: "proxima-nova-light", sans-serif;
+  color: #9B9B9B;
+  font-size: 13px;
+  text-align: center; }
+
+.btn-action {
+  font-family: "proxima-nova-semibold", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+  background: none;
+  color: #E02E47;
+  border: 1px solid #E02E47;
+  margin-top: 30px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+  .btn-action:hover {
+    background: #E02E47;
+    color: white; }
+
+.divider {
+  text-align: center;
+  margin: 30px 0; }
+
+.generic {
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px 0; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.contacto li {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 10px 0;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  background-position: left center; }
+  .contacto li:nth-child(1) {
+    background-image: url(../images/icon-home.svg); }
+  .contacto li:nth-child(2) {
+    background-image: url(../images/icon-email.svg); }
+  .contacto li:nth-child(3) {
+    background-image: url(../images/icon-phone.svg); }
+  .contacto li:nth-child(4) {
+    padding-left: 0; }
+.contacto .social-links ul {
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 0;
+  padding-left: 0; }
+.contacto .social-links li {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  display: inline-block;
+  text-align: center;
+  width: 20%; }
+
+.servicios li {
+  background-image: url(../images/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 30px;
+  padding-top: 5px;
+  color: #4A4A4A;
+  font-family: "proxima-nova-semibold", sans-serif;
+  font-size: 16px;
+  margin: 10px 0; }
+
+.vcenter {
+  display: flex;
+  align-items: center; }
+
+header .logo {
+  height: 20px;
+  margin: 12px 0; }
+
+main .hero-unit {
+  background: white;
+  text-align: center; }
+main .lead {
+  color: #4A4A4A;
+  font-size: 24px;
+  line-height: 36px; }
+main .tagline {
+  padding-top: 20px; }
+main .team {
+  padding-top: 30px; }
+  main .team img {
+    width: 300px; }
+main .intro {
+  text-align: center;
+  color: #F1F1F1;
+  font-family: "proxima-nova-light", sans-serif;
+  margin: 50px 0;
+  padding: 0 30px; }
+  main .intro .lead {
+    font-size: 14px;
+    line-height: 1.4em; }
+    main .intro .lead strong {
+      color: #E02E47; }
+
+.btn-primary {
+  text-transform: uppercase;
+  background: #E02E47;
+  border: none;
+  font-size: 16px;
+  font-family: "proxima-nova-semibold", sans-serif;
+  padding: 12px 20px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+  .btn-primary:hover {
+    background: #BC2841; }
+
+strong {
+  font-family: "proxima-nova-semibold", sans-serif; }
+
+footer p {
+  color: #9B9B9B;
+  margin: 25px 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center; }
+
+form {
+  margin-top: 20px; }
+  form input,
+  form textarea {
+    border: 1px solid #E02E47;
+    width: 100%;
+    font-size: 13px;
+    padding: 8px 18px;
+    border-radius: 5px;
+    margin: 5px 0; }
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(224, 46, 71, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(224, 46, 71, 0.6);
+  outline: 0 none; }
+
+@media (min-width: 48em) {
+  iframe {
+    height: 300px; } }
+
+/*# sourceMappingURL=main.css.map */
