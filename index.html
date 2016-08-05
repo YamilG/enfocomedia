@@ -45,7 +45,7 @@
           <div class="row">
             <div class="col-md-5 tagline">
               <p class="lead">Confeccionamos <br>contenido digital <br><strong>a la medida</strong>.</p>
-              <a href="#"><button class="btn btn-primary">Contáctenos</button></a>
+              <a href="#contacto"><button class="btn btn-primary">Contáctenos</button></a>
             </div>
             <div class="col-md-7 team">
               <img src="images/team.svg" alt="Equipo EnFoco">
@@ -101,25 +101,25 @@
 
             <div class="col-md-10 col-md-offset-1">
               <div class="team-member col-xs-6 col-md-3">
-                <img src="images/team-member.png">
+                <img src="images/david.jpg">
                 <h5>David Nolasco</h5>
                 <p>Social Media Expert</p>
               </div>
 
               <div class="team-member col-xs-6 col-md-3">
-                <img src="images/team-member.png">
+                <img src="images/alicia.jpg">
                 <h5>Alicia Medina</h5>
                 <p>Social Media Expert</p>
               </div>
 
               <div class="team-member col-xs-6 col-md-3">
-                <img src="images/team-member.png">
+                <img src="images/yamil.jpg">
                 <h5>Yamil Gonzales</h5>
                 <p>Social Media Expert</p>
               </div>
 
               <div class="team-member col-xs-6 col-md-3">
-                <img src="images/team-member.png">
+                <img src="images/daniel.jpg">
                 <h5>Daniel Chinchilla</h5>
                 <p>Social Media Expert</p>
               </div>
@@ -132,7 +132,7 @@
         <img src="images/separator.svg">
       </div>
 
-      <section class="contacto container">
+      <section class="contacto container" id="contacto">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 generic">
             <h2>Contacto</h2>
@@ -144,7 +144,7 @@
             <div class="contact-details col-md-6 col-xs-12">
               <ul>
                 <li>Centro de Negocios La Reforma, Local E1, Tegucigalpa, Honduras.</li>
-                <li><a href="mailto:info@enfocomedia.com">info@enfocomedia.com</a></li>
+                <li><a href="mailto:info@enfocomedia.com?subject=Contacto Web">info@enfocomedia.com</a></li>
                 <li><a href="tel:+50489903999">+504 8990-3999</a></li>
                 <li class="social-links">
                   <ul>
@@ -174,5 +174,33 @@
     <footer>
       <p>&copy; 2016 EnFoco Media</p>
     </footer>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74928261-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
